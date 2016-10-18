@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>SpecFlow.Assist.Dynamic</id>
+    <version>1.2.0</version>
+    <title>SpecFlow.Assist.Dynamic</title>
+    <authors>www.marcusoft.net - Marcus Hammarberg</authors>
+    <owners>www.marcusoft.net - Marcus Hammarberg</owners>
+    <projectUrl>http://marcusoftnet.github.com/SpecFlow.Assist.Dynamic/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Adds support for dynamic instances and set from SpecFlow tables</description>
+    <summary>See documentation at https://github.com/marcusoftnet/SpecFlow.Assist.Dynamic/wiki/Documentation</summary>
+    <releaseNotes>Updated to SpecFlow 2.1</releaseNotes>
+    <copyright>Copyright © Marcus Hammarberg  2016</copyright>
+    <tags>specflow, bdd, test, scenario, cucubmer, specification by example</tags>
+    <dependencies>
+      <dependency id="ImpromptuInterface" version="6.2.2" />
+      <dependency id="SpecFlow" version="2.1.0" />
+    </dependencies>
+  </metadata>
+</package>
