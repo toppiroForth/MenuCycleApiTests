@@ -12,17 +12,17 @@ using ApiTests.Domain.Model;
 using System.Net;
 using NUnit.Framework;
 using System.Collections;
-using MenuCycleApiTests.GlobalData;
+using MenuCycleApiTests_ci.GlobalData;
 using ApiTests.Domain.Siren;
 
-namespace MenuCycleApiTests.MenuCycleTests
+namespace MenuCycleApiTests_ci.MenuCycleTests
 {
     [Binding]
     public class MenuCycleStepDef
     {
-        private readonly MenuCycleLastId menuCycleLastId;
+        private readonly MenuCycleRecord menuCycleLastId;
 
-        public MenuCycleStepDef(MenuCycleLastId menuCycleLastId)
+        public MenuCycleStepDef(MenuCycleRecord menuCycleLastId)
         {
             this.menuCycleLastId = menuCycleLastId;
         }
@@ -48,23 +48,27 @@ namespace MenuCycleApiTests.MenuCycleTests
         }
 
         [Then(@"the following MenuCycle entities are returned")]
-        public bool ThenTheFollowingMenuCycleEntitiesAreReturned(Table table)
+        public void ThenTheFollowingMenuCycleEntitiesAreReturned(Table table)
         {
-            bool results = false;
+    
             var response = ScenarioContext.Current.Get<RestResponse>("Response");
-            //var embeddedLink = JsonConvert.DeserializeObject<PagedCollectionEntity<EmbeddedLink<>(response.Content);
+            var embeddedLink = JsonConvert.DeserializeObject<PagedCollectionEntity<EmbeddedLink>>(response.Content);
 
-            //foreach (var entity in embeddedLink.entities)
-            //{
-            //    var cls = entity.Class.First();
-            //    var Rel = entity.rel.First();
-            //    if ((cls == "MenuCycle") && (Rel == "/rels/MenuCycle"))
-            //    {
-            //        results = true;
-            //        continue;
-            //    }
-            //}
-            return results;
+
+            foreach (var entity in embeddedLink.entities)
+            {
+                var cls = entity.Class.First();
+                var Rel = entity.rel.First();
+                if ((cls == "MenuCycle") && (Rel == "/rels/menucycle"))
+                {
+                 
+                    continue;
+                }
+                else
+                {
+                    throw new Exception("Links are not equal");
+                }
+            }
         }
 
         [Then(@"the follwing links are returned")]
@@ -91,23 +95,13 @@ namespace MenuCycleApiTests.MenuCycleTests
         {
 
             var response = ScenarioContext.Current.Get<RestResponse>("Response");
-            var menuCycle = JsonConvert.DeserializeObject<ApiTests.Domain.Siren.PagedCollectionEntity<MenuCycleEntity<MenuCycleProperties>>>(response.Content);
+            var menuCycle = JsonConvert.DeserializeObject<MenuCycleEntity<MenuCycleProperties>>(response.Content);
             ///table.CompareToSet<MenuCycleProperties>(menuCycle.entities);
-            //  var details = table.CreateDynamicSet();
-
-
-            foreach (var item in menuCycle.entities)
-            {
-                menuCycleLastId._menuCycleId = item.properties.menuCycleId;
-
-            }
-
+            //  var details = table.CreateDynamicSet();          
+              menuCycleLastId._menuCycleId =  menuCycle.properties.menuCycleId;
+      
             Console.WriteLine("MenuCycle id " + menuCycleLastId._menuCycleId);
-
         }
-
-
-
 
         [Then(@"No record found exception returned by server")]
         public void ThenNoRecordFoundExceptionReturnedByServer()

@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace MenuCycleApiTests.MenuCycle.Features
+namespace MenuCycleApiTests_ci.MenuCycle.Features
 {
     using TechTalk.SpecFlow;
     
@@ -65,29 +65,29 @@ namespace MenuCycleApiTests.MenuCycle.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Update a MenuCycles")]
-        [NUnit.Framework.CategoryAttribute("MenuCycle_Update")]
-        [NUnit.Framework.TestCaseAttribute("\"Myname\"", "\"mydescription\"", "25", new string[0])]
-        public virtual void UpdateAMenuCycles(string name, string description, string nonServingdata, string[] exampleTags)
+        [NUnit.Framework.CategoryAttribute("MenuCycleUpdate")]
+        [NUnit.Framework.TestCaseAttribute("28", "\"updated\"", "\"mydescription\"", "25", new string[0])]
+        public virtual void UpdateAMenuCycles(string menuCycleid, string name, string description, string nonServingdata, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "MenuCycle_Update"};
+                    "MenuCycleUpdate"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Update a MenuCycles", @__tags);
-#line 5
+#line 7
    this.ScenarioSetup(scenarioInfo);
-#line 6
+#line 8
    testRunner.Given("user can access the MenuService API with userID \'pgreen\' and Org \'Fourth\' content" +
                     "Type \'application/vnd.siren+json\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 7
-   testRunner.When("user issues \'PUT\' request against the \'/MenuCycles\' and \'/30\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 8
-     testRunner.And(string.Format("the update request {0} {1} {2} contains the following body", name, description, nonServingdata), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9
-     testRunner.And("the request is sent to the server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+   testRunner.When("user issues \'PUT\' request against the \'/MenuCycles\' and \'/28\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10
+     testRunner.And(string.Format("the update request and {0} {1} {2} {3} contains the following body", menuCycleid, name, description, nonServingdata), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 11
+     testRunner.And("the request is sent to the server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 12
      testRunner.Then("No errors are returned by server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

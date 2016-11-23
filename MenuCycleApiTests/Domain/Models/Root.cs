@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ApiTests.Domain.Model;
 
-namespace MenuCycleApiTests.Domain.Models
+namespace MenuCycleApiTests_ci.Domain.Models
 {
     public class RootProperties
     {

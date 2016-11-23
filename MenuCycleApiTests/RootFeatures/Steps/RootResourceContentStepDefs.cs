@@ -7,10 +7,10 @@ using TechTalk.SpecFlow;
 using RestSharp;
 using Newtonsoft.Json;
 using TechTalk.SpecFlow.Assist;
-using MenuCycleApiTests.Domain.Models;
+using MenuCycleApiTests_ci.Domain.Models;
 using NUnit.Framework;
 
-namespace MenuCycleApiTests.RootFeatuer
+namespace MenuCycleApiTests_ci.RootFeatuer
 {
     [Binding]
     public class RootResourceContent

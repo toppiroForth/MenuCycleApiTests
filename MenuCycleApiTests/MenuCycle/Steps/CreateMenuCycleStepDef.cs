@@ -11,12 +11,11 @@ using System.Threading.Tasks;
 using TechTalk.SpecFlow;
 using ApiTests.Domain.Model;
 
-namespace MenuCycleApiTests.MenuCycleTests.MenuCyclesStepDefs
+namespace MenuCycleApiTests_ci.MenuCycleTests.MenuCyclesStepDefs
 {
     [Binding]
     public class CreateMenuCycleStepDef
     {
-
 
 
         [When(@"the '(.*)' group request sent to server")]
@@ -49,7 +48,7 @@ namespace MenuCycleApiTests.MenuCycleTests.MenuCyclesStepDefs
                          rel =new List<string>{"/rels/Group"},
                          Properties = new ApiTests.Domain.Model.Properties2
                          {
-                             groupId = 20
+                             groupId = 3
                          }
                     }
                 };
@@ -64,7 +63,7 @@ namespace MenuCycleApiTests.MenuCycleTests.MenuCyclesStepDefs
                          rel =new List<string>{"/rels/Group"},
                          Properties = new ApiTests.Domain.Model.Properties2
                          {
-                             groupId = 20
+                             groupId = 1
                          }
                     },
                       new EmbeddedProperty
@@ -73,7 +72,7 @@ namespace MenuCycleApiTests.MenuCycleTests.MenuCyclesStepDefs
                          rel =new List<string>{"/rels/Group"},
                          Properties = new ApiTests.Domain.Model.Properties2
                          {
-                             groupId = 21
+                             groupId = 3
                          }
                     }
                 };
@@ -88,17 +87,17 @@ namespace MenuCycleApiTests.MenuCycleTests.MenuCyclesStepDefs
                          rel =new List<string>{"/rels/Group"},
                          Properties = new ApiTests.Domain.Model.Properties2
                          {
-                             groupId = 17
-                       }
-                     }
+                             groupId = 299
+                         }
+                    }
                 };
 
             }
             //changing PropertyNames into CamelCase
             var settings = new JsonSerializerSettings
-                            {
-                                ContractResolver = new CamelCasePropertyNamesContractResolver()
-                            };
+            {
+                ContractResolver = new CamelCasePropertyNamesContractResolver()
+            };
             var obj = JsonConvert.SerializeObject(entity, Formatting.None, settings);
 
             request.AddParameter("application/vnd.siren+json", obj, ParameterType.RequestBody);
@@ -115,7 +114,7 @@ namespace MenuCycleApiTests.MenuCycleTests.MenuCyclesStepDefs
         {
 
             var response = ScenarioContext.Current.Get<RestResponse>("Response");
-            Assert.AreEqual(HttpStatusCode.Forbidden, response.StatusCode);
+            Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode);
         }
 
 

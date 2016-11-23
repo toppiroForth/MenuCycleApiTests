@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace MenuCycleApiTests.MenuCycleItems.Features
+namespace MenuCycleApiTests_ci.MenuCycleItems.Features
 {
     using TechTalk.SpecFlow;
     
@@ -31,8 +31,7 @@ namespace MenuCycleApiTests.MenuCycleItems.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "DeleteMenuCycleItem", "\tIn order to avoid silly mistakes\r\n\tAs a math idiot\r\n\tI want to be told the sum o" +
-                    "f two numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "DeleteMenuCycleItem", "Feature: UpdateSingelMenuItem", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -64,23 +63,52 @@ namespace MenuCycleApiTests.MenuCycleItems.Features
             testRunner.CollectScenarioErrors();
         }
         
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("DeleteMenuCycleItem")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void DeleteMenuCycleItem()
+        public virtual void FeatureBackground()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DeleteMenuCycleItem", new string[] {
-                        "mytag"});
+#line 5
+  #line 6
+    testRunner.Given("user can access the MenuService API with userID \'pgreen\' and Org \'Fourth\' content" +
+                    "Type \'application/vnd.siren+json\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 7
-this.ScenarioSetup(scenarioInfo);
+     testRunner.When("user issues \'PUT\' request against the \'/MenuCycles\' and \'/23/items\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 8
- testRunner.Given("I have entered 50 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+      testRunner.And("user update single item  with day 8 order 3 menuid 0 mealperiod 4 and recipeid 2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9
- testRunner.And("I have entered 70 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+      testRunner.And("the request is sent to the server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 10
- testRunner.When("I press add", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+     testRunner.Then("No errors are returned by server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 11
- testRunner.Then("the result should be 120 on the screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+      testRunner.And("user can get one of the menucycleitemid", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("DELETE- a MenuCycleItem")]
+        [NUnit.Framework.CategoryAttribute("Delete")]
+        [NUnit.Framework.CategoryAttribute("a")]
+        [NUnit.Framework.CategoryAttribute("menuCycle")]
+        [NUnit.Framework.CategoryAttribute("item")]
+        public virtual void DELETE_AMenuCycleItem()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DELETE- a MenuCycleItem", new string[] {
+                        "Delete",
+                        "a",
+                        "menuCycle",
+                        "item"});
+#line 14
+   this.ScenarioSetup(scenarioInfo);
+#line 5
+  this.FeatureBackground();
+#line 15
+     testRunner.Given("user can access the MenuService API with userID \'pgreen\' and Org \'Fourth\' content" +
+                    "Type \'application/vnd.siren+json\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 16
+     testRunner.When("user issues \'DELETE\' request to delete last item against the \'/MenuCycles\' and \'/" +
+                    "23/items\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 17
+   testRunner.And("the request is sent to the server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 18
+   testRunner.Then("No errors are returned by server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

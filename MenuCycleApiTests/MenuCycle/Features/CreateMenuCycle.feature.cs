@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace MenuCycleApiTests.MenuCycle.Features
+namespace MenuCycleApiTests_ci.MenuCycle.Features
 {
     using TechTalk.SpecFlow;
     
@@ -73,8 +73,8 @@ namespace MenuCycleApiTests.MenuCycle.Features
 #line 6
   this.ScenarioSetup(scenarioInfo);
 #line 7
-     testRunner.Given("user can access the MenuService API with userID \'pgreen\' and Org \'Fourth\' content" +
-                    "Type \'application/vnd.siren+json\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+     testRunner.Given("user can access the MenuService API with userID \'0058E000001jqqsQAA\' and Org \'001" +
+                    "2400000Ed3NCAAZ\' contentType \'application/vnd.siren+json\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 8
      testRunner.When("user issues \'POST\' request against the \'/MenuCycles\' and \'\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 9
@@ -95,8 +95,8 @@ namespace MenuCycleApiTests.MenuCycle.Features
 #line 13
   this.ScenarioSetup(scenarioInfo);
 #line 14
-     testRunner.Given("user can access the MenuService API with userID \'pgreen\' and Org \'Fourth\' content" +
-                    "Type \'application/vnd.siren+json\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+     testRunner.Given("user can access the MenuService API with userID \'0058E000001jqqsQAA\' and Org \'001" +
+                    "2400000Ed3NCAAZ\' contentType \'application/vnd.siren+json\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 15
      testRunner.When("user issues \'POST\' request against the \'/MenuCycles\' and \'\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 16

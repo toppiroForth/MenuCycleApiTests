@@ -9,27 +9,23 @@ using NUnit.Framework;
 using RestSharp;
 using RestSharp.Authenticators;
 using TechTalk.SpecFlow;
-using MenuCycleApiTests.GlobalData;
+using MenuCycleApiTests_ci.GlobalData;
 
-namespace MenuCycleApiTests
+namespace MenuCycleApiTests_ci
 {
     [Binding]
     public class GlobalStep
     {
         private readonly LoginData loginData;
-        private readonly MenuCycleLastId menuCycleLastId;
+        private readonly MenuCycleRecord menuCycleLastId;
 
-        public GlobalStep(LoginData loginData,MenuCycleLastId menuCycleLastId)
+        public GlobalStep(LoginData loginData,MenuCycleRecord menuCycleLastId)
         {
             this.loginData = loginData;
             this.menuCycleLastId = menuCycleLastId;
         }
 
-        public static void AddStandardHeadersToRequest(RestRequest request)
-        {
-
-       
-        }
+    
 
         [Given(@"user can access the MenuService API with '(.*)' and '(.*)'")]
         public void GivenICanAccessTheMenuServiceAPIAsAnAuthenticatedUserWithAnd(string username, string password)
@@ -90,7 +86,8 @@ namespace MenuCycleApiTests
             // request method
             Method method;
             Method.TryParse(httpVerb, out method);
-    
+
+          
             // generate a request based on that URI
             var request = new RestRequest(resourceCollection + individualResource, method);
 

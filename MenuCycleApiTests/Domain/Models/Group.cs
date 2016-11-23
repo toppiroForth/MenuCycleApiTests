@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MenuCycleApiTests.Domain.Models
+namespace MenuCycleApiTests_ci.Domain.Models
 {
     public class Group
     {
         public int groupid { get; set; }
+
+        public string Name { get; set; }
     }
 }

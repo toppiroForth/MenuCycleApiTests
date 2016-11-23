@@ -1,4 +1,4 @@
-﻿using MenuCycleApiTests.Domain.Models;
+﻿using MenuCycleApiTests_ci.Domain.Models;
 using RestSharp;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using ApiTests.Domain.Model;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
-namespace MenuCycleApiTests.MenuCycleItems.Steps
+namespace MenuCycleApiTests_ci.MenuCycleItems.Steps
 {
 
     [Binding]
@@ -18,13 +18,13 @@ namespace MenuCycleApiTests.MenuCycleItems.Steps
     {
 
 
-        [When(@"the '(.*)' request contains the following body")]
-        public void WhenTheRequestContainsTheFollowingBody(string itemName)
+       [When(@"the '(.*)' with id (.*) request contains the following body")]
+        public void WhenTheWithIdRequestContainsTheFollowingBody(string itemName, int id)
         {
             // get the request
             var request = ScenarioContext.Current.Get<RestRequest>("Request");
             //add body to request 
-            var entity = new MenuCycleItemsEntity<Dictionary<string, object>>();
+            var entity = new MenuCycleItemEntity<Dictionary<string, object>>();
             entity.@class.Add("MenuCycleItems");
 
 
@@ -40,7 +40,7 @@ namespace MenuCycleApiTests.MenuCycleItems.Steps
                      {
                          day=9,
                          order=1,
-                         menuId=9,
+                         menuId=id,
                          mealPeriodId=4                                                                   
                      }
                 }
@@ -59,7 +59,7 @@ namespace MenuCycleApiTests.MenuCycleItems.Steps
                          {                                
                              day=9,
                              order=1,
-                             recipeId=6,
+                             recipeId=id,
                              mealPeriodId=4
                                                                   
                          }
@@ -68,7 +68,11 @@ namespace MenuCycleApiTests.MenuCycleItems.Steps
 
             }
             else if (itemName == "MenuRecipe")
-            {
+            {  
+                int menu = id / 100;
+                int recipe = id % 100;
+  
+
                 entity.entities = new List<EmbeddedMenuCycleItemProperty>
                 {
                     new EmbeddedMenuCycleItemProperty
@@ -79,7 +83,7 @@ namespace MenuCycleApiTests.MenuCycleItems.Steps
                          {
                              day=9,
                              order=1,
-                              menuId=9,
+                              menuId=menu,
                              mealPeriodId=4
                                                                    
                          }
@@ -92,7 +96,7 @@ namespace MenuCycleApiTests.MenuCycleItems.Steps
                          {
                              day=9,
                              order=1,
-                             recipeId=6,
+                             recipeId=recipe,
                              mealPeriodId=4
                                                                    
                          }
@@ -123,7 +127,7 @@ namespace MenuCycleApiTests.MenuCycleItems.Steps
             // get the request
             var request = ScenarioContext.Current.Get<RestRequest>("Request");
             //add body to request 
-            var entity = new MenuCycleItemsEntity<Dictionary<string, object>>();
+            var entity = new MenuCycleItemEntity<Dictionary<string, object>>();
             entity.@class.Add("MenuCycleItems");
             entity.entities = new List<EmbeddedMenuCycleItemProperty>
             {

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MenuCycleApiTests.Domain.Models
+namespace MenuCycleApiTests_ci.Domain.Models
 {
 
     
@@ -37,60 +37,12 @@ namespace MenuCycleApiTests.Domain.Models
 
 
     //Root
-    public class MenuCycleItemsEntity<T> : SubEntity<T, EmbeddedMenuCycleItemProperty> where T : class
+    public class MenuCycleItemEntity<T> : SubEntity<T, EmbeddedMenuCycleItemProperty> where T : class
     {
 
     }
 
+   
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
-
-
-    //public class EmbeddedEntity<T> : SubEntity<T, EmbeddedEntity> where T : class
-    //{
-
-
-    //}
 }

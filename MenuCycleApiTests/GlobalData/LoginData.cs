@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MenuCycleApiTests
+namespace MenuCycleApiTests_ci
 {
     public class LoginData
     {

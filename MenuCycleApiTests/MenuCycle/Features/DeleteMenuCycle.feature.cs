@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace MenuCycleApiTests.MenuCycle.Features
+namespace MenuCycleApiTests_ci.MenuCycle.Features
 {
     using TechTalk.SpecFlow;
     
@@ -76,12 +76,6 @@ namespace MenuCycleApiTests.MenuCycle.Features
 #line 7
      testRunner.Then("No errors are returned by server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 8
-  testRunner.When("user issues \'GET\' request against the \'/MenuCycles\' and \'?$skip=120&$top=20\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 9
-      testRunner.And("the request is sent to the server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 10
-     testRunner.Then("No errors are returned by server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 11
       testRunner.And("user should get the last menuCycleId from response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
@@ -93,19 +87,19 @@ namespace MenuCycleApiTests.MenuCycle.Features
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DELETE- a MenuCycles", new string[] {
                         "MenuCycle_Delete"});
-#line 14
+#line 11
   this.ScenarioSetup(scenarioInfo);
 #line 3
 this.FeatureBackground();
-#line 15
+#line 12
      testRunner.Given("user can access the MenuService API with userID \'pgreen\' and Org \'Fourth\' content" +
                     "Type \'application/vnd.siren+json\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 16
+#line 13
      testRunner.When("user issues \'DELETE\' request to delete last record against the \'/MenuCycles\' and " +
                     "\'\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 17
+#line 14
     testRunner.And("the request is sent to the server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 18
+#line 15
        testRunner.Then("No errors are returned by server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

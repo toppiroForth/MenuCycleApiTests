@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace MenuCycleApiTests.RootFeatures.Features
+namespace MenuCycleApiTests_ci.RootFeatures.Features
 {
     using TechTalk.SpecFlow;
     

@@ -9,16 +9,16 @@ using System.Threading.Tasks;
 using TechTalk.SpecFlow;
 using ApiTests.Domain.Model;
 
-namespace MenuCycleApiTests.MenuCycleTests.MenuCyclesStepDefs
+namespace MenuCycleApiTests_ci.MenuCycleTests.MenuCyclesStepDefs
 {
     [Binding]
     public class UpdateMenuCycleStepDefs
     {
 
+    
 
-
-        [When(@"the update request ""(.*)"" ""(.*)"" (.*) contains the following body")]
-        public void WhenTheUpdateRequestContainsTheFollowingBody(string name, string desc, int nonSer)
+        [When(@"the update request and (.*) ""(.*)"" ""(.*)"" (.*) contains the following body")]
+        public void WhenTheUpdateRequestAndContainsTheFollowingBody(string menucycleid,string name, string desc, int nonSer)
         {
             // get the request
             var request = ScenarioContext.Current.Get<RestRequest>("Request");
@@ -28,7 +28,7 @@ namespace MenuCycleApiTests.MenuCycleTests.MenuCyclesStepDefs
             entity.rel.Add("/rels/MenuCycle");
             Dictionary<string, object> props = new Dictionary<string, object>()
             {
-                { "menuCycleId", 30},
+                { "menuCycleId", menucycleid},
                 { "name", name + DateTime.Now},
                 { "description", desc},
                 {"nonServingDays",nonSer}
@@ -42,7 +42,7 @@ namespace MenuCycleApiTests.MenuCycleTests.MenuCyclesStepDefs
                      rel =new List<string>{"/rels/Group"},
                      Properties = new ApiTests.Domain.Model.Properties2
                      {
-                         groupId = 25
+                         groupId = 2
                      }
                 }
             };

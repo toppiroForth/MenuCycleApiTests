@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace MenuCycleApiTests.MenuCycle.Features
+namespace MenuCycleApiTests_ci.MenuCycle.Features
 {
     using TechTalk.SpecFlow;
     
@@ -73,7 +73,7 @@ namespace MenuCycleApiTests.MenuCycle.Features
 #line 5
   this.ScenarioSetup(scenarioInfo);
 #line 6
-     testRunner.Given("user can access the MenuService API with userID \'pgreen\' and Org \'Fourth\' content" +
+    testRunner.Given("user can access the MenuService API with userID \'pgreen\' and Org \'Fourth\' content" +
                     "Type \'application/vnd.siren+json\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 7
      testRunner.When("user issues \'GET\' request against the \'/MenuCycles\' and \'\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -91,70 +91,6 @@ namespace MenuCycleApiTests.MenuCycle.Features
                         "isMaster",
                         "nonServingDays"});
             table1.AddRow(new string[] {
-                        "10",
-                        "MenuCycle10",
-                        "MC Desc10",
-                        "0",
-                        "False",
-                        "True",
-                        "0"});
-            table1.AddRow(new string[] {
-                        "14",
-                        "MenuCycle14",
-                        "MC Desc14",
-                        "0",
-                        "False",
-                        "True",
-                        "0"});
-            table1.AddRow(new string[] {
-                        "18",
-                        "MenuCycle18",
-                        "MC Desc18",
-                        "0",
-                        "False",
-                        "True",
-                        "0"});
-            table1.AddRow(new string[] {
-                        "20",
-                        "MenuCycle20",
-                        "MC Desc20",
-                        "0",
-                        "False",
-                        "True",
-                        "0"});
-            table1.AddRow(new string[] {
-                        "23",
-                        "MenuCycle23",
-                        "MC Desc23",
-                        "0",
-                        "False",
-                        "True",
-                        "0"});
-            table1.AddRow(new string[] {
-                        "25",
-                        "MenuCycle25",
-                        "MC Desc25",
-                        "0",
-                        "False",
-                        "True",
-                        "0"});
-            table1.AddRow(new string[] {
-                        "28",
-                        "MenuCycle28",
-                        "MC Desc28",
-                        "0",
-                        "False",
-                        "True",
-                        "0"});
-            table1.AddRow(new string[] {
-                        "1",
-                        "MenuCycle1",
-                        "MC Desc1",
-                        "0",
-                        "False",
-                        "True",
-                        "0"});
-            table1.AddRow(new string[] {
                         "2",
                         "MenuCycle2",
                         "MC Desc2",
@@ -166,6 +102,14 @@ namespace MenuCycleApiTests.MenuCycle.Features
                         "3",
                         "MenuCycle3",
                         "MC Desc3",
+                        "0",
+                        "False",
+                        "True",
+                        "0"});
+            table1.AddRow(new string[] {
+                        "4",
+                        "MenuCycle4",
+                        "MC Desc4",
                         "0",
                         "False",
                         "True",
@@ -195,17 +139,25 @@ namespace MenuCycleApiTests.MenuCycle.Features
                         "True",
                         "0"});
             table1.AddRow(new string[] {
-                        "9",
-                        "MenuCycle9",
-                        "MC Desc9",
+                        "10",
+                        "MenuCycle10",
+                        "MC Desc10",
                         "0",
                         "False",
                         "True",
                         "0"});
             table1.AddRow(new string[] {
-                        "13",
-                        "MenuCycle13",
-                        "MC Desc13",
+                        "12",
+                        "MenuCycle12",
+                        "MC Desc12",
+                        "0",
+                        "False",
+                        "True",
+                        "0"});
+            table1.AddRow(new string[] {
+                        "16",
+                        "MenuCycle16",
+                        "MC Desc16",
                         "0",
                         "False",
                         "True",
@@ -214,6 +166,22 @@ namespace MenuCycleApiTests.MenuCycle.Features
                         "17",
                         "MenuCycle17",
                         "MC Desc17",
+                        "0",
+                        "False",
+                        "True",
+                        "0"});
+            table1.AddRow(new string[] {
+                        "18",
+                        "MenuCycle18",
+                        "MC Desc18",
+                        "0",
+                        "False",
+                        "True",
+                        "0"});
+            table1.AddRow(new string[] {
+                        "20",
+                        "MenuCycle20",
+                        "MC Desc20",
                         "0",
                         "False",
                         "True",
@@ -235,6 +203,14 @@ namespace MenuCycleApiTests.MenuCycle.Features
                         "True",
                         "0"});
             table1.AddRow(new string[] {
+                        "24",
+                        "MenuCycle24",
+                        "MC Desc24",
+                        "0",
+                        "False",
+                        "True",
+                        "0"});
+            table1.AddRow(new string[] {
                         "26",
                         "MenuCycle26",
                         "MC Desc26",
@@ -246,6 +222,30 @@ namespace MenuCycleApiTests.MenuCycle.Features
                         "27",
                         "MenuCycle27",
                         "MC Desc27",
+                        "0",
+                        "False",
+                        "True",
+                        "0"});
+            table1.AddRow(new string[] {
+                        "30",
+                        "dsafasd",
+                        "rgerter",
+                        "0",
+                        "False",
+                        "True",
+                        "40"});
+            table1.AddRow(new string[] {
+                        "28",
+                        "MenuCycle28",
+                        "MC Desc28",
+                        "0",
+                        "False",
+                        "True",
+                        "0"});
+            table1.AddRow(new string[] {
+                        "33",
+                        "MenuCycle33",
+                        "MC Desc33",
                         "0",
                         "False",
                         "True",
@@ -263,16 +263,16 @@ namespace MenuCycleApiTests.MenuCycle.Features
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("GET-SingleMenuCycle status Code and properties", new string[] {
                         "MenuCycle_SingleMenuCycle"});
-#line 35
+#line 34
   this.ScenarioSetup(scenarioInfo);
-#line 36
+#line 35
     testRunner.Given("user can access the MenuService API with userID \'pgreen\' and Org \'Fourth\' content" +
                     "Type \'application/vnd.siren+json\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 36
+     testRunner.When("user issues \'GET\' request against the \'/MenuCycles\' and \'/23\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 37
-     testRunner.When("user issues \'GET\' request against the \'/MenuCycles\' and \'/2\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 38
       testRunner.And("the request is sent to the server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 39
+#line 38
      testRunner.Then("No errors are returned by server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
@@ -284,14 +284,14 @@ namespace MenuCycleApiTests.MenuCycle.Features
                         "isMaster",
                         "nonServingDays"});
             table2.AddRow(new string[] {
-                        "2",
-                        "MenuCycle2",
-                        "MC Desc2",
+                        "23",
+                        "MenuCycle23",
+                        "MC Desc23",
                         "0",
-                        "false",
-                        "true",
+                        "False",
+                        "True",
                         "0"});
-#line 40
+#line 39
       testRunner.And("the following MenuCycle properites is returned", ((string)(null)), table2, "And ");
 #line hidden
             this.ScenarioCleanup();
@@ -304,16 +304,16 @@ namespace MenuCycleApiTests.MenuCycle.Features
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("GET-MenuCycle Entities", new string[] {
                         "MenuCycle_Entities"});
-#line 48
+#line 44
   this.ScenarioSetup(scenarioInfo);
-#line 49
+#line 45
     testRunner.Given("user can access the MenuService API with userID \'pgreen\' and Org \'Fourth\' content" +
                     "Type \'application/vnd.siren+json\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 50
+#line 46
      testRunner.When("user issues \'GET\' request against the \'/MenuCycles\' and \'\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 51
+#line 47
       testRunner.And("the request is sent to the server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 52
+#line 48
      testRunner.Then("No errors are returned by server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
@@ -322,7 +322,7 @@ namespace MenuCycleApiTests.MenuCycle.Features
             table3.AddRow(new string[] {
                         "MenuCycle",
                         "/rels/MenuCycle"});
-#line 53
+#line 49
       testRunner.And("the following MenuCycle entities are returned", ((string)(null)), table3, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
@@ -331,26 +331,26 @@ namespace MenuCycleApiTests.MenuCycle.Features
                         "title",
                         "type"});
             table4.AddRow(new string[] {
-                        "http://menuservice.starchef.net//MenuCycles",
+                        "http://ci-menuservice.fourth.com//MenuCycles",
                         "GET",
                         "",
                         "application/vnd.siren+json;"});
             table4.AddRow(new string[] {
-                        "http://menuservice.starchef.net//MenuCycles?$skip=0&$top=20",
+                        "http://ci-menuservice.fourth.com//MenuCycles?$skip=0&$top=20",
                         "GET",
                         "Current Page",
                         "application/vnd.siren+json;"});
             table4.AddRow(new string[] {
-                        "http://menuservice.starchef.net//MenuCycles?$skip=20&$top=20",
+                        "http://ci-menuservice.fourth.com//MenuCycles?$skip=20&$top=20",
                         "GET",
                         "Next Page",
                         "application/vnd.siren+json;"});
             table4.AddRow(new string[] {
-                        "http://menuservice.starchef.net//MenuCycles?$skip=60&$top=20",
+                        "http://ci-menuservice.fourth.com//MenuCycles?$skip=40&$top=20",
                         "GET",
                         "Last Page",
                         "application/vnd.siren+json;"});
-#line 56
+#line 52
    testRunner.And("the follwing links are returned", ((string)(null)), table4, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
@@ -360,12 +360,12 @@ namespace MenuCycleApiTests.MenuCycle.Features
                         "type",
                         "name"});
             table5.AddRow(new string[] {
-                        "http://menuservice.starchef.net/MenuCycles",
+                        "http://ci-menuservice.fourth.com/MenuCycles",
                         "POST",
                         "Create a menu cycle",
                         "application/vnd.siren+json;",
                         "Create"});
-#line 62
+#line 58
   testRunner.And("the following Actions are returned", ((string)(null)), table5, "And ");
 #line hidden
             this.ScenarioCleanup();
@@ -378,16 +378,16 @@ namespace MenuCycleApiTests.MenuCycle.Features
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("GET-MenuCycle NotFound", new string[] {
                         "MenuCycle_NotFound"});
-#line 68
+#line 64
   this.ScenarioSetup(scenarioInfo);
-#line 69
+#line 65
     testRunner.Given("user can access the MenuService API with userID \'pgreen\' and Org \'Fourth\' content" +
                     "Type \'application/vnd.siren+json\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 70
+#line 66
      testRunner.When("user issues \'GET\' request against the \'/MenuCycles\' and \'/110\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 71
+#line 67
       testRunner.And("the request is sent to the server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 72
+#line 68
      testRunner.Then("No record found exception returned by server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

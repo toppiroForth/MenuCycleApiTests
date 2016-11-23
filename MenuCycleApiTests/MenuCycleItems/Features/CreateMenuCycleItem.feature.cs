@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace MenuCycleApiTests.MenuCycleItems.Features
+namespace MenuCycleApiTests_ci.MenuCycleItems.Features
 {
     using TechTalk.SpecFlow;
     
@@ -70,16 +70,16 @@ namespace MenuCycleApiTests.MenuCycleItems.Features
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("POST- MenuCycleItem with Manu", new string[] {
                         "MenuCycle_Create_a_MenuCycleItem"});
-#line 4
-  this.ScenarioSetup(scenarioInfo);
 #line 5
+  this.ScenarioSetup(scenarioInfo);
+#line 6
     testRunner.Given("user can access the MenuService API with userID \'pgreen\' and Org \'Fourth\' content" +
                     "Type \'application/vnd.siren+json\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 6
-     testRunner.When("user issues \'POST\' request against the \'/MenuCycles\' and \'/30/items\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 7
-      testRunner.And("the \'Menu\' request contains the following body", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+     testRunner.When("user issues \'POST\' request against the \'/MenuCycles\' and \'/23/items\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 8
+      testRunner.And("the \'Menu\' with id 14 request contains the following body", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 9
      testRunner.Then("No errors are returned by server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -92,16 +92,16 @@ namespace MenuCycleApiTests.MenuCycleItems.Features
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("POST- MenuCycleItem with Recipe", new string[] {
                         "MenuCycle_Create_a_MenuCycleItem"});
-#line 11
+#line 13
   this.ScenarioSetup(scenarioInfo);
-#line 12
+#line 14
     testRunner.Given("user can access the MenuService API with userID \'pgreen\' and Org \'Fourth\' content" +
                     "Type \'application/vnd.siren+json\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 13
-     testRunner.When("user issues \'POST\' request against the \'/MenuCycles\' and \'/30/items\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 14
-      testRunner.And("the \'Recipe\' request contains the following body", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 15
+     testRunner.When("user issues \'POST\' request against the \'/MenuCycles\' and \'/23/items\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 16
+      testRunner.And("the \'Recipe\' with id 2 request contains the following body", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 17
      testRunner.Then("No errors are returned by server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -114,16 +114,16 @@ namespace MenuCycleApiTests.MenuCycleItems.Features
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("POST- MenuCycleItem with Manu and recipe", new string[] {
                         "MenuCycle_Create_a_MenuCycleItem"});
-#line 18
+#line 20
   this.ScenarioSetup(scenarioInfo);
-#line 19
+#line 21
     testRunner.Given("user can access the MenuService API with userID \'pgreen\' and Org \'Fourth\' content" +
                     "Type \'application/vnd.siren+json\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 20
-     testRunner.When("user issues \'POST\' request against the \'/MenuCycles\' and \'/30/items\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 21
-     testRunner.And("the \'MenuRecipe\' request contains the following body", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 22
+     testRunner.When("user issues \'POST\' request against the \'/MenuCycles\' and \'/23/items\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 23
+      testRunner.And("the \'MenuRecipe\' with id 1402 request contains the following body", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 24
      testRunner.Then("No errors are returned by server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -136,16 +136,16 @@ namespace MenuCycleApiTests.MenuCycleItems.Features
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("POST-FB- MenuCycleitem with menu and recipe not associated with user", new string[] {
                         "MenuCycleitem_withMenuRecipeNotAssociated"});
-#line 26
-  this.ScenarioSetup(scenarioInfo);
 #line 27
+  this.ScenarioSetup(scenarioInfo);
+#line 28
     testRunner.Given("user can access the MenuService API with userID \'pgreen\' and Org \'Fourth\' content" +
                     "Type \'application/vnd.siren+json\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 28
-     testRunner.When("user issues \'POST\' request against the \'/MenuCycles\' and \'/30/items\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 29
-      testRunner.And("the \'MenuRecipe\' not associated request contains the following body", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+     testRunner.When("user issues \'POST\' request against the \'/MenuCycles\' and \'/23/items\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 30
+     testRunner.And("the \'MenuRecipe\' with id 1412 request contains the following body", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 31
      testRunner.Then("bad request status are returned by server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

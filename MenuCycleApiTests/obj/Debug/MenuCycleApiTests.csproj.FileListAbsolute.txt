@@ -28,3 +28,34 @@ C:\Users\Vsalivendra\documents\visual studio 2012\Projects\MenuCycleApiTests\Men
 C:\Users\Vsalivendra\documents\visual studio 2012\Projects\MenuCycleApiTests\MenuCycleApiTests\bin\Debug\de\Itenso.TimePeriod.resources.dll
 C:\Users\Vsalivendra\documents\visual studio 2012\Projects\MenuCycleApiTests\MenuCycleApiTests\obj\Debug\MenuCycleApiTests.dll
 C:\Users\Vsalivendra\documents\visual studio 2012\Projects\MenuCycleApiTests\MenuCycleApiTests\obj\Debug\MenuCycleApiTests.pdb
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\MenuCycleApiTests.dll.config
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\MenuCycleApiTests.dll
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\MenuCycleApiTests.pdb
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\FluentAssertions.Core.dll
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\FluentAssertions.dll
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\ImpromptuInterface.dll
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\Itenso.TimePeriod.dll
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\Mono.Cecil.dll
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\Mono.Cecil.Mdb.dll
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\Mono.Cecil.Pdb.dll
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\Mono.Cecil.Rocks.dll
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\MoreLinq.dll
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\Newtonsoft.Json.dll
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\nunit.framework.dll
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\nunit.mocks.dll
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\RestSharp.dll
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\SpecFlow.Assist.Dynamic.dll
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\TechTalk.SpecFlow.dll
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\FluentAssertions.pdb
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\FluentAssertions.xml
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\FluentAssertions.Core.pdb
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\FluentAssertions.Core.xml
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\ImpromptuInterface.xml
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\MoreLinq.xml
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\Newtonsoft.Json.xml
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\nunit.framework.xml
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\RestSharp.xml
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\bin\Debug\de\Itenso.TimePeriod.resources.dll
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\obj\Debug\MenuCycleApiTests.dll
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\obj\Debug\MenuCycleApiTests.pdb
+C:\Git\MenyCycleApiTestMaster\MenuCycleApiTests\obj\Debug\MenuCycleApiTests.csprojResolveAssemblyReference.cache
